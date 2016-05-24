@@ -74,6 +74,11 @@
             <version>1.6</version>
         </dependency>
         <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-vfs2</artifactId>
+            <version>2.1</version>
+        </dependency>
+        <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>19.0</version>
@@ -156,14 +161,14 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-framework-bom</artifactId>
-            <version>4.2.5.RELEASE</version>
+            <version>4.2.6.RELEASE</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.integration</groupId>
             <artifactId>spring-integration-bom</artifactId>
-            <version>4.2.5.RELEASE</version>
+            <version>4.2.6.RELEASE</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
@@ -279,6 +284,11 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>ideauidesigner-maven-plugin</artifactId>
                 <version>1.0-beta-1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jarsigner-plugin</artifactId>
+                <version>1.4</version>
             </plugin>
         </plugins>
     </build>
